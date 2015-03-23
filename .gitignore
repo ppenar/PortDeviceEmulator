@@ -57,3 +57,6 @@ target/
 #Eclipse
 .project
 .pydevproject
+
+#conf
+conf.json

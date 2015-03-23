@@ -26,6 +26,7 @@ class PdeForm(QtGui.QMainWindow):
             self.addTextToBox("Config file: LOAD")
             self.ui.labelID.setText(str(self.conf.getIdNumber()))
         else:
+            self.ui.startButton.setEnabled(False)
             self.addTextToBox("Config file: ERROR")
             
         for portName in listPorts.enumerate_serial_ports():
