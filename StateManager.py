@@ -82,7 +82,12 @@ class StateManager(QtCore.QObject):
             
     
     def calcCompare(self):
-        return self.sendInt*2
+        if(self.step==1):
+            return self.sendInt*2
+        if(self.step==2):
+            return self.sendInt+2
+        if(self.step==3):
+            return self.sendInt*2+10
     
     def reset(self):
         self.maxStep=3
