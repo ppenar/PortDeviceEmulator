@@ -59,4 +59,4 @@ target/
 .pydevproject
 
 #conf
-conf.json
+.conf.json
